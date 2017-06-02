@@ -5,9 +5,10 @@ var family = (function(){
 		this.age = age;
 	}
 	function Fam(name, age, relation){
-		People.call(this, name, age);
+		People.call(this);
 		this.relation = relation;
 	}
+	Fam.prototype = Object.create(People.prototype);
 	var nfam;
 	return {
 		setFam : function(name1,age1,relation1){
