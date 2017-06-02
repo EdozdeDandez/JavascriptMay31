@@ -4,8 +4,10 @@ var family = (function(){
 		this.name = name;
 		this.age = age;
 	}
+	People.prototype.name = People.name;
+	People.prototype.age = People.age;
 	function Fam(name, age, relation){
-		People.call(this);
+		People.call(this, age, relation);
 		this.relation = relation;
 	}
 	Fam.prototype = Object.create(People.prototype);
