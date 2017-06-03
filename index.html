@@ -1,10 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
-	<title>Javascript</title>
-	<script src="test.js"></script>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JavaScript Events</title>
+    <link rel="stylesheet" href="Foundation/css/app.css" />
 </head>
 <body>
-
+	<div id="container">
+      <div class="row">
+        <div class="large-12" columns>
+            <nav class="top-bar" data-topbar data-options="sticky_on: large" role="navigation" >
+              <ul class="title-area">
+                <li class="name">
+                  <h1><a>My page</a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon">
+                <a href="#"><span>Menu</span></a>
+                </li>
+              </ul>
+              <section class="top-bar-section">
+                <ul class="left">
+                  <li class="divider"></li>
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li class="divider"></li>
+                  <li class="has-dropdown"><a>Other pages</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Another page</a></li>
+                      <li><a href="#">And another one</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Page1</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Page2</a></li>
+                  <li class="divider"></li>
+                </ul>
+                <ul class="right">
+                  <li><input type="search" placeholder="Search"></li>
+                  <li class="divider"></li>
+                  <li><button type="button" class="small round button">Search</button></li>
+                </ul>
+              </section>
+            </nav>
+        </div>
+      </div>
+      <div class="row">
+      	<div class="large-12 columns">
+      		<div class="panel">
+      			<div class="row">
+      				<div class="large-12 medium-push-2 columns">
+      					<h1>JavaScript</h1>
+      				</div>
+      			</div>	
+      		</div>
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="large-8 medium-8 columns">
+	        <hr />       
+	        <h5>Form</h5>
+	        <form id="fform" action="#" method="get">
+	          <div class="row">
+	            <div class="large-12 columns">
+	                <label>Email</label>
+	                  <input type="text" placeholder="email address" disabled />
+	            </div>
+	          </div>
+	          <div class="row">
+	            <div class="large-4 medium-4 columns">
+	              <label>Firstname</label>
+	              <input type="text" id="fname" placeholder="first name" />
+	            </div>
+	            <div class="large-4 medium-4 columns">
+	              <label>Age</label>
+	              <input type="number" id="age" placeholder="age" />
+	            </div>
+	            <div class="large-4 medium-4 columns">
+	                <label>Relationship</label>
+	                  <input type="text" id="relate" placeholder="relationship" />
+	            </div>
+	          </div>
+	          <div class="row">
+	            <div class="large-12 columns">
+	              <label>One thing</label>
+	              <select disabled>
+	                <option selected disabled>Select one</option>
+	                <option value="Book">Book</option>
+	                <option value="Laptop">Laptop</option>
+	                <option value="Pen">Pen</option>
+	                <option value="Pencil">Pencil</option>
+	              </select>
+	            </div>
+	          </div>
+	          <div class="row">
+	            <div class="large-6 medium-6 columns">
+	              <label>Select one</label>
+	              <input type="radio" name="pokemon" value="Red" id="pokemonRed" disabled><label for="pokemonRed">Radio 1</label>
+	              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" disabled><label for="pokemonBlue">Radio 2</label>
+	            </div>
+	            <div class="large-6 medium-6 columns">
+	              <label>Choose one or both</label>
+	              <input id="checkbox1" type="checkbox" disabled><label for="checkbox1">Checkbox 1</label>
+	              <input id="checkbox2" type="checkbox" disabled><label for="checkbox2">Checkbox 2</label>
+	            </div>
+	          </div>
+	          <div class="row">
+	            <div class="large-12 columns">
+	              <label>Textarea</label>
+	              <textarea disabled placeholder="Something"></textarea>
+	            </div>
+	          </div>
+	          <div class="row">
+	            <div class="large-4 medium-4 columns medium-push-2">
+	              <a href="#" id="btnsubmit" class="medium radius button" onclick="family.setFam()">Submit</a>
+	            </div>
+	            <div class="large-4 medium-4 columns">
+	              <a href="#" class="medium alert button">Cancel</a>
+	            </div>
+	          </div>
+	        </form>
+      	</div>     
+	    <div class="large-4 medium-4 columns">
+	        <div class="panel">
+	          <h2><b>Family</b></h2>
+	          <div id="family-names"></div>
+	        </div>
+	    </div>
+      </div>
+    </div>   
+    <script src="Foundation/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="Foundation/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="Foundation/bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="Foundation/bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="Foundation/bower_components/foundation/js/foundation.js"></script>
+    <script src="Foundation/js/app.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
